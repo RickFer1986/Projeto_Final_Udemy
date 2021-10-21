@@ -5,14 +5,7 @@ require_once(dirname(__FILE__, 2) . '/src/models/User.php');
 
 $user = new User(['name' => 'Lucas', 'email' => 'lucas@cod3r,com.br']);
 print_r($user);
-echo 'FIM!';
+echo '<br><br>';
+$user->email = 'lucas_alterado@cod3r.com.br';
+print_r($user->email);
 
-
-
-//$sql = 'select * from users';
-//$result = Database::getResultFromQuery($sql);
-
-//while($row = $result->fetch_assoc()) {
-  //  print_r($row);
-    //echo '<br>';
-//}
